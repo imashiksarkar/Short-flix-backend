@@ -6,11 +6,13 @@ Short Flix is a platform where you can find your favourite short films. You can 
 
 ## Links
 
-- [Api Docs](https://shortflixbackend.vercel.app/docs)
+- [Frontend](https://real-short-flix.vercel.app)
 
-- [Base Url](https://shortflixbackend.vercel.app)
+- [Backend](https://real-short-flix.vercel.app/api)
 
-- [Health Check](https://shortflixbackend.vercel.app/health)
+- [Backend Api Docs](https://real-short-flix.vercel.app/api/docs)
+
+- [Backend Health Check](https://real-short-flix.vercel.app/api/health)
 
 ## Features
 
