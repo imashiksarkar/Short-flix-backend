@@ -6,7 +6,16 @@ from fastapi.exceptions import RequestValidationError
 
 start_time = time.time()
 
-app = FastAPI()
+app = FastAPI(
+  title="Short Flix API",
+  version="1.0.0",
+  servers=[
+        {
+            "url": "https://real-short-flix.vercel.app/api",
+            "description": "Short Flix Production API"
+        }
+    ]
+  )
 
 @app.get("/")
 async def home():
