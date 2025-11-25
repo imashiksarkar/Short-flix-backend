@@ -10,15 +10,15 @@ class VideoCreate(BaseModel):
 
 router = APIRouter()
 
-@router.get("/videos")
+@router.get("/shorts")
 async def get_videos():
     return await vs.get_videos()
   
-@router.post("/videos")
+@router.post("/shorts")
 async def add_video(video: VideoCreate):
     return await vs.add_video(video)
   
-@router.get("/videos/{video_id}")
+@router.get("/shorts/{video_id}")
 async def get_single_video(video_id: int):
   video = await vs.get_single_video(video_id)
   

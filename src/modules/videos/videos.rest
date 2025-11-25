@@ -1,5 +1,5 @@
-### save video
-POST http://localhost:5000/videos
+### save short
+POST http://localhost:5000/api/shorts
 Content-Type: application/json
 
 {
@@ -9,8 +9,8 @@ Content-Type: application/json
 }
 
 
-### get all videos
-GET http://localhost:5000/videos
+### get all shorts
+GET http://localhost:5000/api/shorts
 
-### get video by id
-GET http://localhost:5000/videos/1111
+### get short by id
+GET http://localhost:5000/api/shorts/1

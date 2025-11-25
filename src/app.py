@@ -21,7 +21,7 @@ async def health():
   }
 
 
-app.include_router(videos_app)
+app.include_router(videos_app, prefix="/api")
 
 
 @app.exception_handler(RequestValidationError)
