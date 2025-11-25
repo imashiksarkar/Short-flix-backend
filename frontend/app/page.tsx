@@ -10,11 +10,7 @@ export interface Video {
 }
 
 export default async function Home() {
-  const h = await headers()
-  const host = h.get('host')
-  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https'
-  const baseUrl = `${protocol}://${host}`
-
+  const baseUrl = 'https://real-short-flix.vercel.app'
   const res = await fetch(`${baseUrl}/api/shorts`, {
     cache: 'no-store',
   })
