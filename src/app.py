@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import time
+from .modules.videos import router as videos_app
 
 start_time = time.time()
 
@@ -17,3 +18,5 @@ async def health():
     "uptime": time.time() - start_time
   }
 
+
+app.include_router(videos_app)

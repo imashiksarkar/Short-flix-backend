@@ -1,0 +1,16 @@
+### save video
+POST http://localhost:5000/videos
+Content-Type: application/json
+
+{
+  "videoUrl": "https://example.com/video.mp4",
+  "title": "Sample Title",
+  "tags": ["tag1", "tag2"]
+}
+
+
+### get all videos
+GET http://localhost:5000/videos
+
+### get video by id
+GET http://localhost:5000/videos/1111
